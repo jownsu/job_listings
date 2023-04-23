@@ -1,0 +1,32 @@
+@import "./variables";
+/* Resets */
+
+*,
+*::before,
+*::after,
+p{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;    
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #EFFAFA;
+    font-family: $font_primary;
+}
+
+nav{
+    height: 156px;
+    background: #5CA5A5 url("images/bg-header-desktop.svg") center / cover no-repeat;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: $bp_lg;
+    width: 100%;
+}
