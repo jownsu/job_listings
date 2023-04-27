@@ -1,0 +1,31 @@
+@import "../../assets/sass/variables";
+
+.filter_item{
+    button{
+        background: $color_light_green;
+        border-radius: 4px;
+        border: none;
+        color: $color_green;
+        cursor: pointer;
+        font: 700 16px $font_primary;
+        letter-spacing: -.12px;
+        outline: none;
+        overflow: hidden;
+        padding: 10px 43px 8px 10px;
+        position: relative;
+
+        &:hover span{
+            background-color: $color_dark_green;
+        }
+
+        span{
+            background-size: 13.44px 13.44px;
+            background: $color_green url("images/icon-remove.svg") center / contain no-repeat;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 32px;
+        }
+    }
+}

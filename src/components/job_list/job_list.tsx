@@ -4,7 +4,7 @@ import "./job_list.scss";
 
 const JobList = () => {
     return (
-        <ul>
+        <ul className="job_list">
             {job_data.map(job => <JobItem job={job}/>)}
         </ul>
     )

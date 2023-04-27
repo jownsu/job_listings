@@ -33,7 +33,7 @@ const JobItem: React.FC<{job: JobItemProps}> = (props) => {
     } = props.job;
     
     return (
-        <li className={ featured ? "active" : "" }>
+        <li className={`job_item ${featured ? "active" : ""}` }>
             <div className="main_info">
                 <img src={logo} alt={`${company} logo`} />
                 <div>

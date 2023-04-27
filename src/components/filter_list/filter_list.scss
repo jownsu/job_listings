@@ -1,0 +1,38 @@
+@import "../../assets/sass/variables";
+
+.filter_list_container{
+    background: $color-white;
+    border-radius: 5px;
+    bottom: -50%;
+    box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+    display: flex;
+    justify-content: space-between;
+    min-height: 72px;
+    padding: 20px 40px;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 100%;
+
+    .filter_list{
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        list-style-type: none;
+    }
+
+    .btn_clear{
+        background: none;
+        border: none;
+        color: $color_green;
+        cursor: pointer;
+        font: 700 16px/24px $font_primary;
+        letter-spacing: -.12px;
+        outline: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+

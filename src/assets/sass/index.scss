@@ -21,8 +21,11 @@ body{
 }
 
 nav{
-    height: 156px;
     background: #5CA5A5 url("images/bg-header-desktop.svg") center / cover no-repeat;
+    .container{
+        position: relative;
+        height: 156px;
+    }
 }
 
 .container {
