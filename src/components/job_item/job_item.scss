@@ -93,12 +93,11 @@
 			}
 			.company_info {
 				align-items: center;
-				color: #b7c4c4;
+                color: #7C8F8F;
 				display: flex;
 				justify-content: space-between;
 				@media only screen and (max-width: $bp_md) {
 					border-bottom: 1px solid #b7c4c4;
-					color: #7c8f8f;
 					gap: 15px;
 					justify-content: initial;
 					padding-bottom: 19px;
