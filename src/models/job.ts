@@ -2,7 +2,7 @@ type JobItemProps = {
     id        : number;
     company   : string;
     logo      : string;
-    new       : boolean;
+    is_new    : boolean;
     featured  : boolean;
     position  : string;
     role      : string;
@@ -19,7 +19,7 @@ class Job {
     id        : number;
     company   : string;
     logo      : string;
-    new       : boolean;
+    is_new    : boolean;
     featured  : boolean;
     position  : string;
     role      : string;
@@ -34,7 +34,7 @@ class Job {
         this.id        = job.id;
         this.company   = job.company;
         this.logo      = job.logo;
-        this.new       = job.new;
+        this.is_new    = job.is_new;
         this.featured  = job.featured;
         this.position  = job.position;
         this.role      = job.role;

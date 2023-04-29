@@ -1,129 +1,139 @@
 @import "../../assets/sass/_variables.scss";
 
-.job_item{
-    align-items: center;
-    background: $color_white;
-    border-radius: 5px;
-    display: flex;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    gap: 10px;
-    justify-content: space-between;
-    min-height: 152px;
-    padding: 32px 40px;
+.job_item {
+	align-items: center;
+	background: $color_white;
+	border-radius: 5px;
+	display: flex;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	gap: 10px;
+	justify-content: space-between;
+	min-height: 152px;
+	padding: 32px 40px;
 
-    @media only screen and (max-width: $bp_md){
-        align-items: initial;
-        flex-direction: column;
-        justify-content: initial;
-        padding: 5px 17px 0px;
-    }
+	@media only screen and (max-width: $bp_md) {
+		align-items: initial;
+		flex-direction: column;
+		justify-content: initial;
+		padding: 5px 17px 0px;
+	}
 
-    &.active{
-        border-left: 5px solid #5CA5A5;
-    }
-    .main_info{
-        display: flex;
-        gap: 24px;
-        @media only screen and (max-width: $bp_md){
-            flex-direction: column;
-            gap: 10px;
-            transform: translateY(-30px);
-        }
-        img{
-            border-radius: 50%;
-            height: 88px;
-            width: 88px;
-            @media only screen and (max-width: $bp_md){
-                height: 48px;
-                width: 48px;
-            }
-        }
-        > div{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            .company_name{
-                align-items: center;
-                display: flex;
-                gap: 10px;
-                @media only screen and (max-width: $bp_md){
-                    gap: 8px;
-                    margin-bottom: 10px;
-                }
-                h3{
+	&.active {
+		border-left: 5px solid #5ca5a5;
+	}
+	.main_info {
+		display: flex;
+		gap: 24px;
+		@media only screen and (max-width: $bp_md) {
+			flex-direction: column;
+			gap: 10px;
+			transform: translateY(-30px);
+		}
+		img {
+			border-radius: 50%;
+			height: 88px;
+			width: 88px;
+			@media only screen and (max-width: $bp_md) {
+				height: 48px;
+				width: 48px;
+			}
+		}
+		> div {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.company_name {
+				align-items: center;
+				display: flex;
+				gap: 10px;
+				@media only screen and (max-width: $bp_md) {
+					gap: 8px;
+					margin-bottom: 10px;
+				}
+				h3 {
+					color: $color_green;
+					font: 700 18px/16.56px $font_primary;
+					@media only screen and (max-width: $bp_md) {
+						margin-right: 23px;
+					}
+				}
+				span {
+					align-items: center;
+					border-radius: 20px;
+					color: $color_white;
+					display: flex;
+					font: 700 14px/14px $font_primary;
+					justify-content: center;
+					padding-top: 3px;
+					text-transform: uppercase;
+				}
+				.new {
+					background: $color_green;
+					height: 24px;
+					width: 51px;
+				}
+
+				.featured {
+					background: #2b3939;
+					height: 24px;
+					width: 79px;
+				}
+			}
+			h2 {
+				color: #2b3939;
+                cursor: pointer;
+				font: 700 22px/24px $font_primary;
+				@media only screen and (max-width: $bp_md) {
+					margin-bottom: 14px;
+				}
+
+                &:hover{
                     color: $color_green;
-                    font: 700 18px/16.56px $font_primary;
-                    @media only screen and (max-width: $bp_md){
-                        margin-right: 23px;
-                    }
                 }
-                span{
-                    align-items: center;
-                    border-radius: 20px;
-                    color: $color_white;
-                    display: flex;
-                    font: 700 14px/14px $font_primary;
-                    justify-content: center;
-                    padding-top: 3px;
-                    text-transform: uppercase;
-                }
-                .new{
-                    background: $color_green;
-                    height: 24px;
-                    width: 51px;
-                }
+			}
+			.company_info {
+				align-items: center;
+				color: #b7c4c4;
+				display: flex;
+				justify-content: space-between;
+				@media only screen and (max-width: $bp_md) {
+					border-bottom: 1px solid #b7c4c4;
+					color: #7c8f8f;
+					gap: 15px;
+					justify-content: initial;
+					padding-bottom: 19px;
+				}
+				> span {
+					background: #b7c4c4;
+					border-radius: 50%;
+					height: 4px;
+					width: 4px;
+				}
+			}
+		}
+	}
+	.filters {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 16px;
+		@media only screen and (max-width: $bp_md) {
+			transform: translateY(-23px);
+		}
+		.filter {
+			background: $color_light_green;
+			border-radius: 4px;
+			border: none;
+			color: $color_green;
+			cursor: pointer;
+			font: 700 16px/24px $font_primary;
+			letter-spacing: -0.12px;
+			outline: none;
+			padding: 6px 9px 2px;
 
-                .featured{
-                    background: #2B3939;
-                    height: 24px;
-                    width: 79px;
-                }
-            }
-            h2{
-                color: #2B3939;
-                font: 700 22px/24px $font_primary;
-                @media only screen and (max-width: $bp_md){
-                    margin-bottom: 14px;
-                }
-            }
-            .company_info{
-                align-items: center;
-                color: #B7C4C4;
-                display: flex;
-                justify-content: space-between;
-                @media only screen and (max-width: $bp_md){
-                    border-bottom: 1px solid #B7C4C4;
-                    color: #7C8F8F;
-                    gap: 15px;
-                    justify-content: initial;
-                    padding-bottom: 19px;
-                }
-                > span{
-                    background: #B7C4C4;
-                    border-radius: 50%;
-                    height: 4px;
-                    width: 4px;
-                }
-            }
-        }
-    }
-    .filters{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-        @media only screen and (max-width: $bp_md){
-            transform: translateY(-23px);
-        }
-        .filter{
-            background: $color_light_green;
-            border-radius: 4px;
-            border: none;
-            color: $color_green;
-            cursor: pointer;
-            font: 700 16px/24px $font_primary;
-            letter-spacing: -.12px;
-            outline: none;
-            padding: 6px 9px 2px;
-        }
-    }
+			&:hover {
+				background: $color_green;
+				color: $color_white;
+			}
+		}
+	}
 }
