@@ -14,7 +14,8 @@ Users should be able to:
 
 It is my pleasure to share with you a screenshot of my solution to the job-listings challenge. I have invested considerable time and effort into developing a clean, user-friendly interface that is designed to streamline the job application process. The job listings are displayed in a clear and concise manner, with important details such as job title, company name, and location prominently displayed. I have also implemented filters that allow users to narrow their search based on specific criteria, such as job type or location. Overall, I believe that my solution represents a significant step forward in the world of job listings, and I look forward to hearing your thoughts and feedback.
 
-![](./screenshot.jpg)
+![](./screenshots/1.png)
+![](./screenshots/2.png)
 
 ### Links
 
